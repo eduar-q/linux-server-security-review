@@ -76,7 +76,7 @@ Findings should be interpreted together with the available system context and su
 
 ---
 
-🇪🇸 Versión en Español
+## 🇪🇸 Versión en Español
 
 Descripción
 
