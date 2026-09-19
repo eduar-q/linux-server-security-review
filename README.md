@@ -50,7 +50,7 @@ linux-server-security-review/
 ```
 ---
 
-📋 Output
+### 📋 Output
 
 The project is designed to produce two main report formats:
 
@@ -65,7 +65,7 @@ Structured output containing the collected and analyzed information for programm
 
 ---
 
-⚠️ Scope
+###  ⚠️ Scope
 
 This project is intended to assist with Linux security and configuration reviews.
 
