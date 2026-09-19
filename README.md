@@ -93,7 +93,7 @@ La información recopilada puede ser analizada, comparada con una línea base op
 
 ---
 
-🚀 Características Principales
+### 🚀 Características Principales
 
 Recolección Automatizada: Obtiene información relevante del sistema Linux.
 
@@ -111,7 +111,7 @@ Diseño de Solo Lectura: El objetivo es inspeccionar el sistema sin modificar su
 
 ---
 
-📋 Alcance
+### 📋 Alcance
 
 El proyecto está orientado a apoyar revisiones de seguridad y configuración de servidores Linux.
 
@@ -122,7 +122,7 @@ Los hallazgos deben interpretarse considerando el contexto del sistema y la evid
 
 ---
 
-👨‍💻 Author
+### 👨‍💻 Author
 
 Eduar Q.
 
