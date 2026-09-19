@@ -67,7 +67,7 @@ Motor de Riesgos: Clasifica los hallazgos en niveles de prioridad claros y expli
 
 Entregables Profesionales: Genera reportes estructurados listos para entregar al cliente en formatos Markdown y JSON.
 
-## Developed by Eduar Q. | Designed for Professional Linux Security Auditing Services.
+# Developed by Eduar Q. | Designed for Professional Linux Security Auditing Services.
 
 
 
