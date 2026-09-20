@@ -98,15 +98,20 @@ La información recopilada puede ser analizada, comparada con una línea base op
 **Recolección Automatizada:** 
 - Obtiene información relevante del sistema Linux.
 
-**Revisión de Configuración:** Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
+**Revisión de Configuración:** 
+- Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
 
-**Comparación con Línea Base:** Permite comparar el estado observado con una línea base definida cuando está disponible.
+**Comparación con Línea Base:** 
+- Permite comparar el estado observado con una línea base definida cuando está disponible.
 
-**Motor de Riesgos y Revisión:** Clasifica los hallazgos mediante niveles claros y explicables como LOW, MEDIUM, HIGH y REVIEW.
+**Motor de Riesgos y Revisión:** 
+- Clasifica los hallazgos mediante niveles claros y explicables como LOW, MEDIUM, HIGH y REVIEW.
 
-**Informes Estructurados:** Genera informes en Markdown y datos estructurados en JSON.
+**Informes Estructurados:** 
+- Genera informes en Markdown y datos estructurados en JSON.
 
-**Diseño de Solo Lectura:** El objetivo es inspeccionar el sistema sin modificar su configuración.
+**Diseño de Solo Lectura:** 
+- El objetivo es inspeccionar el sistema sin modificar su configuración.
 
 
 
