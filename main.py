@@ -8,10 +8,12 @@ import sys
 import os
 import json
 
-# Importamos colectores (Día 1 y Día 2)
+# Importamos todos los colectores del Día 1 y Día 2
 from collectors import system
 from collectors import users
-from collectors import ssh  # <-- Nuevo colector SSH
+from collectors import ssh
+from collectors import services  # <-- Nuevo
+from collectors import cron      # <-- Nuevo
 
 def print_banner():
     banner = """
@@ -37,12 +39,22 @@ def main():
     users_data = users.collect()
     print(f"[+] Total users found: {users_data.get('total_users', 0)}")
 
-    # 3. SSH Collector (Nuevo)
+    # 3. SSH Collector
     print("\n[*] Executing SSH Collector...")
     ssh_data = ssh.collect()
-    print(json.dumps(ssh_data, indent=4))
+    print(f"[+] SSH config exists: {ssh_data.get('exists', False)}")
 
-    print("\n[+] Day 2 initial target (SSH Collector) integrated successfully!")
+    # 4. Services Collector (Nuevo)
+    print("\n[*] Executing Services Collector...")
+    services_data = services.collect()
+    print(f"[+] Total active system services found: {services_data.get('total_active', 0)}")
+
+    # 5. Cron Collector (Nuevo)
+    print("\n[*] Executing Cron Collector...")
+    cron_data = cron.collect()
+    print(f"[+] Total cron/scheduled entries found: {len(cron_data.get('system_crontab_entries', []))}")
+
+    print("\n[+] Day 2 completed successfully! All core collectors integrated.")
 
 if __name__ == "__main__":
     try:
