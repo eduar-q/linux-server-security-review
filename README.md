@@ -103,6 +103,6 @@ El proyecto está orientado a apoyar revisiones de seguridad y configuración de
 
 Los hallazgos deben interpretarse considerando el contexto del sistema y la evidencia disponible.
 
-### 👨‍💻 Author: 
+## 👨‍💻 Author: 
 Eduar Q.
 Linux · Python · System Administration · Defensive Security
