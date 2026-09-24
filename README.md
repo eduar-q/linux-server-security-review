@@ -96,11 +96,7 @@ La información recopilada puede ser analizada, comparada con una línea base op
 **Diseño de Solo Lectura:** El objetivo es inspeccionar el sistema sin modificar su configuración.
 
 ### 🔐 Autorización y Seguridad
-Esta herramienta está diseñada para revisiones autorizadas de seguridad y configuración.
-
-Antes de ejecutarla en un servidor, el propietario del sistema o un administrador autorizado debe aprobar explícitamente la revisión.
-
-La herramienta funciona en modo de solo lectura y no realiza remediación ni explotación.
+Esta herramienta está diseñada para revisiones autorizadas de seguridad y configuración.Antes de ejecutarla en un servidor, el propietario del sistema o un administrador autorizado debe aprobar explícitamente la revisión.La herramienta funciona en modo de solo lectura y no realiza remediación ni explotación.
 
 ### 📋 Alcance
 El proyecto está orientado a apoyar revisiones de seguridad y configuración de servidores Linux.
