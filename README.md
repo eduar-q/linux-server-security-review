@@ -79,30 +79,30 @@ El proyecto recopila información técnica verificable sobre áreas como usuario
 
 La información recopilada puede ser analizada, comparada con una línea base opcional y utilizada para generar informes técnicos estructurados.
 
-⚠️ Aviso: La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización explícita antes de utilizarla sobre cualquier sistema.
+> **⚠️ Aviso:** La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización explícita antes de utilizarla sobre cualquier sistema.
 
 ### 🚀 Características Principales
-Recolección Automatizada:
+**Recolección Automatizada:**
 
 Obtiene información relevante del sistema Linux.
 
-Revisión de Configuración:
+**Revisión de Configuración:**
 
 Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
 
-Comparación con Línea Base:
+**Comparación con Línea Base:**
 
 Permite comparar el estado observado con una línea base definida cuando está disponible.
 
-Clasificación de Hallazgos (Finding Classification):
+**Clasificación de Hallazgos (Finding Classification):**
 
 Clasifica las observaciones mediante niveles claros y explicables como LOW, MEDIUM, HIGH y REVIEW.
 
-Informes Estructurados:
+**Informes Estructurados:**
 
 Genera informes en Markdown y datos estructurados en JSON.
 
-Diseño de Solo Lectura:
+**Diseño de Solo Lectura:**
 
 El objetivo es inspeccionar el sistema sin modificar su configuración.
 
