@@ -70,17 +70,19 @@ It does not automatically determine whether a system has been compromised, nor d
 Findings should be interpreted together with the available system context and supporting evidence.
 
 ### 🇪🇸 Versión en Español
-Descripción
+
 Linux Server Security Review es una herramienta ligera desarrollada en Python para realizar revisiones de configuración y seguridad en servidores Linux.
 El proyecto recopila información técnica verificable sobre áreas como usuarios, configuración de SSH, servicios, tareas programadas, red, permisos y otros elementos relevantes para la seguridad del sistema.
+
 La información recopilada puede ser analizada, comparada con una línea base opcional y utilizada para generar informes técnicos estructurados.
-⚠️ Aviso: La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización explícita antes de utilizarla sobre cualquier sistema.
+
+> **⚠️ Aviso:** La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización explícita antes de utilizarla sobre cualquier sistema.
 
 ### 🚀 Características Principales
-Recolección Automatizada:
-Obtiene información relevante del sistema Linux.
-Revisión de Configuración:
-Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
+
+**- Recolección Automatizada:** Obtiene información relevante del sistema Linux.
+
+**- Revisión de Configuración:** Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
 Comparación con Línea Base:
 Permite comparar el estado observado con una línea base definida cuando está disponible.
 Clasificación de Hallazgos (Finding Classification):
