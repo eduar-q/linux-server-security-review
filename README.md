@@ -79,7 +79,7 @@ El proyecto recopila información técnica verificable sobre áreas como usuario
 
 La información recopilada puede ser analizada, comparada con una línea base opcional y utilizada para generar informes técnicos estructurados.
 
-⚠️ Aviso: La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización apropiada antes de utilizarla sobre cualquier sistema.
+> **⚠️ Aviso:** La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización apropiada antes de utilizarla sobre cualquier sistema.
 
 ## 🚀 Características Principales
 Recolección Automatizada:
