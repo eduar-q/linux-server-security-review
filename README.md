@@ -82,9 +82,8 @@ La información recopilada puede ser analizada, comparada con una línea base op
 > **⚠️ Aviso:** La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización explícita antes de utilizarla sobre cualquier sistema.
 
 ### 🚀 Características Principales
-**Recolección Automatizada:**
 
-Obtiene información relevante del sistema Linux.
+**Recolección Automatizada:** Obtiene información relevante del sistema Linux.
 
 **Revisión de Configuración:**
 
