@@ -51,27 +51,32 @@ linux-server-security-review/
 └── tests/                  # Test fixtures and test data
 
 ```
-🔐 Authorization & Safety
+### 🔐 Authorization & Safety
+
 This tool is designed for authorized security and configuration reviews.
 Before running it on a server, the system owner or authorized administrator should explicitly approve the review.
 The tool is read-only and does not perform remediation or exploitation.
-📋 Output
+
+### 📋 Output
 The project is designed to produce two main report formats:
 Markdown Report:
 A human-readable report containing observed configuration, findings, evidence, risk levels, and recommended areas for review.
 JSON Report:
 Structured output containing the collected and analyzed information for programmatic processing, archiving, or future integrations.
-⚠️ Scope
+
+### ⚠️ Scope
 This project is intended to assist with Linux security and configuration reviews.
 It does not automatically determine whether a system has been compromised, nor does it replace a complete security audit, penetration test, or human investigation.
 Findings should be interpreted together with the available system context and supporting evidence.
-🇪🇸 Versión en Español
+
+### 🇪🇸 Versión en Español
 Descripción
 Linux Server Security Review es una herramienta ligera desarrollada en Python para realizar revisiones de configuración y seguridad en servidores Linux.
 El proyecto recopila información técnica verificable sobre áreas como usuarios, configuración de SSH, servicios, tareas programadas, red, permisos y otros elementos relevantes para la seguridad del sistema.
 La información recopilada puede ser analizada, comparada con una línea base opcional y utilizada para generar informes técnicos estructurados.
 ⚠️ Aviso: La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización explícita antes de utilizarla sobre cualquier sistema.
-🚀 Características Principales
+
+### 🚀 Características Principales
 Recolección Automatizada:
 Obtiene información relevante del sistema Linux.
 Revisión de Configuración:
@@ -84,14 +89,17 @@ Informes Estructurados:
 Genera informes en Markdown y datos estructurados en JSON.
 Diseño de Solo Lectura:
 El objetivo es inspeccionar el sistema sin modificar su configuración.
-🔐 Autorización y Seguridad
+
+### 🔐 Autorización y Seguridad
 Esta herramienta está diseñada para revisiones autorizadas de seguridad y configuración.
 Antes de ejecutarla en un servidor, el propietario del sistema o un administrador autorizado debe aprobar explícitamente la revisión.
 La herramienta funciona en modo de solo lectura y no realiza remediación ni explotación.
-📋 Alcance
+
+### 📋 Alcance
 El proyecto está orientado a apoyar revisiones de seguridad y configuración de servidores Linux.
 No determina automáticamente si un sistema ha sido comprometido ni sustituye una auditoría de seguridad completa, una prueba de penetración o una investigación humana.
 Los hallazgos deben interpretarse considerando el contexto del sistema y la evidencia disponible.
-👨‍💻 Author
+
+### 👨‍💻 Author
 Eduar Q.
 Linux · Python · System Administration · Defensive Security
