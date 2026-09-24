@@ -80,8 +80,6 @@ Findings should be interpreted together with the available system context and su
 
 ## 🇪🇸 Versión en Español
 
-Descripción
-
 Linux Server Security Review es una herramienta ligera desarrollada en Python para realizar revisiones de configuración y seguridad en servidores Linux.
 
 El proyecto recopila información técnica verificable sobre áreas como usuarios, configuración de SSH, servicios, tareas programadas, red, permisos y otros elementos relevantes para la seguridad del sistema.
