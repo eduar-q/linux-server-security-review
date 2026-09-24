@@ -8,9 +8,10 @@ import sys
 import os
 import json
 
-# Importamos nuestros colectores del Día 1
+# Importamos colectores (Día 1 y Día 2)
 from collectors import system
 from collectors import users
+from collectors import ssh  # <-- Nuevo colector SSH
 
 def print_banner():
     banner = """
@@ -27,20 +28,21 @@ def main():
     if os.geteuid() != 0:
         print("[!] Warning: Not running as root. Some collectors may have restricted access.")
 
-    # 1. Ejecutar System Collector
+    # 1. System Collector
     print("\n[*] Executing System Collector...")
-    system_data = system.collect()
-    print(json.dumps(system_data, indent=4))
+    print(json.dumps(system.collect(), indent=4))
     
-    # 2. Ejecutar Users Collector
+    # 2. Users Collector
     print("\n[*] Executing Users Collector...")
     users_data = users.collect()
     print(f"[+] Total users found: {users_data.get('total_users', 0)}")
-    # Mostramos solo los primeros 5 usuarios para no saturar la terminal en la prueba
-    print(json.dumps(users_data.get('users', [])[:5], indent=4))
-    print("    (... output truncated for brevity ...)")
 
-    print("\n[+] Day 1 core targets achieved successfully!")
+    # 3. SSH Collector (Nuevo)
+    print("\n[*] Executing SSH Collector...")
+    ssh_data = ssh.collect()
+    print(json.dumps(ssh_data, indent=4))
+
+    print("\n[+] Day 2 initial target (SSH Collector) integrated successfully!")
 
 if __name__ == "__main__":
     try:
