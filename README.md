@@ -105,4 +105,4 @@ Los hallazgos deben interpretarse considerando el contexto del sistema y la evid
 
 ### 👨‍💻 Author: 
 **Eduar Q.**
-Linux · Python · System Administration · Defensive Security
+Linux · _Python · System Administration · Defensive Security_
