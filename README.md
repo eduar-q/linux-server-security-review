@@ -84,27 +84,27 @@ La información recopilada puede ser analizada, comparada con una línea base op
 ## 🚀 Características Principales
 Recolección Automatizada:
 
-Obtiene información relevante del sistema Linux.
+- Obtiene información relevante del sistema Linux.
 
 Revisión de Configuración:
 
-Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
+- Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
 
 Comparación con Línea Base:
 
-Permite comparar el estado observado con una línea base definida cuando está disponible.
+- Permite comparar el estado observado con una línea base definida cuando está disponible.
 
 Clasificación de Hallazgos (Finding Classification):
 
-Clasifica las observaciones mediante niveles claros y explicables como LOW, MEDIUM, HIGH y REVIEW.
+- Clasifica las observaciones mediante niveles claros y explicables como LOW, MEDIUM, HIGH y REVIEW.
 
 Informes Estructurados:
 
-Genera informes en Markdown y datos estructurados en JSON.
+- Genera informes en Markdown y datos estructurados en JSON.
 
 Diseño de Solo Lectura:
 
-El objetivo es inspeccionar el sistema sin modificar su configuración.
+- El objetivo es inspeccionar el sistema sin modificar su configuración.
 
 ## 🔐 Autorización y Seguridad
 Esta herramienta está diseñada para revisiones autorizadas de seguridad y configuración.
