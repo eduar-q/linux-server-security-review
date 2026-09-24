@@ -38,7 +38,7 @@ linux-server-security-review/
 ├── collectors/             # System data collection modules
 │   ├── system.py           # OS, kernel, and release information
 │   ├── users.py            # Local user accounts and shell analysis
-│   ├── ssh.py              # SSH daemon and key configurations 
+│   ├── ssh.py              # SSH daemon and key configurations
 │   ├── services.py         # Active systemd services inspection
 │   ├── cron.py             # Scheduled tasks and cron jobs
 │   ├── network.py          # Network interfaces and open ports
@@ -49,78 +49,78 @@ linux-server-security-review/
 ├── examples/               # Example reports and output
 ├── docs/                   # Technical documentation
 └── tests/                  # Test fixtures and test data
-
 ```
-## 🔐 Authorization & Safety
+
+🔐 Authorization & Safety
 This tool is designed for authorized security and configuration reviews.
 
 Before running it on a server, the system owner or authorized administrator should explicitly approve the review.
 
-The tool is read-only and does not perform remediation or intentional exploitation.
+The tool is read-only and does not perform remediation or exploitation.
 
-## 📋 Output
+📋 Output
 The project is designed to produce two main report formats:
 
 Markdown Report: A human-readable report containing observed configuration, findings, evidence, risk levels, and recommended areas for review.
 
 JSON Report: Structured output containing the collected and analyzed information for programmatic processing, archiving, or future integrations.
 
-## ⚠️ Scope
+⚠️ Scope
 This project is intended to assist with Linux security and configuration reviews.
 
 It does not automatically determine whether a system has been compromised, nor does it replace a complete security audit, penetration test, or human investigation.
 
 Findings should be interpreted together with the available system context and supporting evidence.
 
-### 🇪🇸 Versión en Español
+🇪🇸 Versión en Español
 Linux Server Security Review es una herramienta ligera desarrollada en Python para realizar revisiones de configuración y seguridad en servidores Linux.
 
 El proyecto recopila información técnica verificable sobre áreas como usuarios, configuración de SSH, servicios, tareas programadas, red, permisos y otros elementos relevantes para la seguridad del sistema.
 
 La información recopilada puede ser analizada, comparada con una línea base opcional y utilizada para generar informes técnicos estructurados.
 
-> **⚠️ Aviso:** La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización apropiada antes de utilizarla sobre cualquier sistema.
+⚠️ Aviso: La herramienta funciona estrictamente en modo de solo lectura. No modifica la configuración del sistema, instala software ni ejecuta acciones de remediación. Se requiere autorización explícita antes de utilizarla sobre cualquier sistema.
 
-## 🚀 Características Principales
-**Recolección Automatizada:**
+🚀 Características Principales
+Recolección Automatizada:
 
-- Obtiene información relevante del sistema Linux.
+Obtiene información relevante del sistema Linux.
 
-**Revisión de Configuración:**
+Revisión de Configuración:
 
-- Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
+Analiza usuarios, SSH, servicios, tareas programadas, red, permisos y otros componentes relacionados con la seguridad.
 
-**Comparación con Línea Base:**
+Comparación con Línea Base:
 
-- Permite comparar el estado observado con una línea base definida cuando está disponible.
+Permite comparar el estado observado con una línea base definida cuando está disponible.
 
-**Clasificación de Hallazgos (Finding Classification):**
+Clasificación de Hallazgos (Finding Classification):
 
-- Clasifica las observaciones mediante niveles claros y explicables como LOW, MEDIUM, HIGH y REVIEW.
+Clasifica las observaciones mediante niveles claros y explicables como LOW, MEDIUM, HIGH y REVIEW.
 
-**Informes Estructurados:**
+Informes Estructurados:
 
-- Genera informes en Markdown y datos estructurados en JSON.
+Genera informes en Markdown y datos estructurados en JSON.
 
-**Diseño de Solo Lectura:**
+Diseño de Solo Lectura:
 
-- El objetivo es inspeccionar el sistema sin modificar su configuración.
+El objetivo es inspeccionar el sistema sin modificar su configuración.
 
-## 🔐 Autorización y Seguridad
+🔐 Autorización y Seguridad
 Esta herramienta está diseñada para revisiones autorizadas de seguridad y configuración.
 
 Antes de ejecutarla en un servidor, el propietario del sistema o un administrador autorizado debe aprobar explícitamente la revisión.
 
-La herramienta funciona en modo de solo lectura y no realiza remediación ni explotación intencional.
+La herramienta funciona en modo de solo lectura y no realiza remediación ni explotación.
 
-## 📋 Alcance
+📋 Alcance
 El proyecto está orientado a apoyar revisiones de seguridad y configuración de servidores Linux.
 
 No determina automáticamente si un sistema ha sido comprometido ni sustituye una auditoría de seguridad completa, una prueba de penetración o una investigación humana.
 
 Los hallazgos deben interpretarse considerando el contexto del sistema y la evidencia disponible.
 
-## 👨‍💻 Author
+👨‍💻 Author
 Eduar Q.
 
 Linux · Python · System Administration · Defensive Security
