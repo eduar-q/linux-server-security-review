@@ -37,13 +37,10 @@ linux-server-security-review/
 ├── main.py                 # Main orchestrator
 ├── collectors/             # System data collection modules
 │   ├── system.py           # OS, kernel, and release information
-<<<<<<< Updated upstream
 │   ├── users.py            # Local users and shell analysis
 │   ├── ssh.py              # SSH configuration and access settings
-=======
 │   ├── users.py            # Local user accounts and shell analysis
 │   ├── ssh.py              # SSH daemon and key configurations 
->>>>>>> Stashed changes
 │   └── ...                 # Additional security collectors
 ├── analyzer/               # Analysis, comparison, and risk logic
 ├── baselines/              # Baseline definitions
