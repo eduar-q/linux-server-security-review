@@ -90,7 +90,7 @@ La información recopilada puede ser analizada, comparada con una línea base op
 
 **- Informes Estructurados:** Genera informes en Markdown y datos estructurados en JSON.
 
-**-Diseño de Solo Lectura:** El objetivo es inspeccionar el sistema sin modificar su configuración.
+**- Diseño de Solo Lectura:** El objetivo es inspeccionar el sistema sin modificar su configuración.
 
 ### 🔐 Autorización y Seguridad
 
