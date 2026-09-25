@@ -8,12 +8,16 @@ import sys
 import os
 import json
 
-# Importamos todos los colectores del Día 1 y Día 2
+# Importamos todos los colectores hasta el Día 3
 from collectors import system
 from collectors import users
 from collectors import ssh
-from collectors import services  # <-- Nuevo
-from collectors import cron      # <-- Nuevo
+from collectors import services
+from collectors import cron
+from collectors import network
+from collectors import permissions
+from collectors import suid      # <-- Nuevo Día 3
+from collectors import kernel    # <-- Nuevo Día 3
 
 def print_banner():
     banner = """
@@ -44,17 +48,37 @@ def main():
     ssh_data = ssh.collect()
     print(f"[+] SSH config exists: {ssh_data.get('exists', False)}")
 
-    # 4. Services Collector (Nuevo)
+    # 4. Services Collector
     print("\n[*] Executing Services Collector...")
     services_data = services.collect()
     print(f"[+] Total active system services found: {services_data.get('total_active', 0)}")
 
-    # 5. Cron Collector (Nuevo)
+    # 5. Cron Collector
     print("\n[*] Executing Cron Collector...")
     cron_data = cron.collect()
     print(f"[+] Total cron/scheduled entries found: {len(cron_data.get('system_crontab_entries', []))}")
 
-    print("\n[+] Day 2 completed successfully! All core collectors integrated.")
+    # 6. Network Collector
+    print("\n[*] Executing Network Collector...")
+    net_data = network.collect()
+    print(f"[+] Total listening ports/sockets found: {net_data.get('total_listening', 0)}")
+
+    # 7. Permissions Collector
+    print("\n[*] Executing Permissions Collector...")
+    perm_data = permissions.collect()
+    print(f"[+] Critical files audited: {len(perm_data.get('critical_files', {}))}")
+
+    # 8. SUID/SGID Collector (Nuevo Día 3)
+    print("\n[*] Executing SUID/SGID Binaries Collector...")
+    suid_data = suid.collect()
+    print(f"[+] Total SUID/SGID binaries found: {suid_data.get('total_found', 0)}")
+
+    # 9. Kernel Modules Collector (Nuevo Día 3)
+    print("\n[*] Executing Kernel Modules Collector...")
+    kernel_data = kernel.collect()
+    print(f"[+] Total loaded kernel modules found: {kernel_data.get('total_modules', 0)}")
+
+    print("\n[+] Day 3 completed successfully! All data collectors are fully operational.")
 
 if __name__ == "__main__":
     try:
