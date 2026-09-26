@@ -1,0 +1,13 @@
+{
+  "version": "0.1",
+  "descripcion": "Plantilla base de seguridad para el servidor de prueba",
+  "ssh": {
+    "PermitRootLogin": "no",
+    "PasswordAuthentication": "no",
+    "Port": 22
+  },
+  "critical_services": [
+    "ssh",
+    "ufw"
+  ]
+}
