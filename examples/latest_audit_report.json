@@ -1,0 +1,31 @@
+{
+    "metadata": {
+        "audit_timestamp": "2026-09-28 18:12:21 UTC",
+        "target_system": "Linux-Lab",
+        "os_release": "Linux Mint 22.3",
+        "total_findings": 3
+    },
+    "findings": [
+        {
+            "parameter": "SSH -> PermitRootLogin",
+            "expected": "no",
+            "found": "Not Specified / Default",
+            "severity": "HIGH",
+            "recommendation": "Edit /etc/ssh/sshd_config and set 'PermitRootLogin no' to prevent direct administrative root access over the network."
+        },
+        {
+            "parameter": "SSH -> PasswordAuthentication",
+            "expected": "no",
+            "found": "Not Specified / Default",
+            "severity": "MEDIUM",
+            "recommendation": "Edit /etc/ssh/sshd_config and set 'PasswordAuthentication no' to enforce robust SSH key-based authentication."
+        },
+        {
+            "parameter": "SSH -> Port",
+            "expected": 22,
+            "found": "Not Specified / Default",
+            "severity": "LOW",
+            "recommendation": "Edit /etc/ssh/sshd_config and change the listening port to '22' (or a non-standard custom port) to mitigate automated scanning bots."
+        }
+    ]
+}

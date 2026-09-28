@@ -19,9 +19,11 @@ from collectors import permissions
 from collectors import suid
 from collectors import kernel
 
-# Importamos las herramientas del Día 4 para la línea base y comparación
+# Importamos las herramientas de línea base, comparación, riesgos y reportes
 from analyzer.baseline import BaselineManager
 from analyzer.comparator import StateComparator
+from analyzer.risk_engine import RiskEngine
+from analyzer.report_generator import ReportGenerator
 
 def print_banner():
     banner = """
@@ -82,9 +84,9 @@ def main():
     kernel_data = kernel.collect()
     print(f"[+] Total loaded kernel modules found: {kernel_data.get('total_modules', 0)}")
 
-    print("\n[+] Data collection completed! Starting Day 4 Baseline Evaluation...")
+    print("\n[+] Data collection completed! Starting Baseline Evaluation and Risk Analysis...")
 
-    # --- NUEVA SECCIÓN DÍA 4: Validación de Línea Base ---
+    # --- VALIDACIÓN DE LÍNEA BASE, MOTOR DE RIESGOS Y REPORTES ---
     manager = BaselineManager()
     try:
         baseline_data = manager.load()
@@ -96,15 +98,28 @@ def main():
 
         if discrepancias:
             print(f"[!] ¡Alerta! Se encontraron {len(discrepancias)} desviaciones frente al estándar:")
-            for hallazgo in discrepancias:
-                print(f"    - {hallazgo['item']} | Esperado: {hallazgo['esperado']} | Encontrado: {hallazgo['encontrado']}")
+            
+            # Procesamos a través del motor de riesgos
+            risk_engine = RiskEngine()
+            evaluated_risks = risk_engine.evaluate_discrepancies(discrepancias)
+
+            for risk in evaluated_risks:
+                print(f"    - [{risk['severity']}] Parámetro: {risk['parameter']}")
+                print(f"      Esperado: {risk['expected']} | Encontrado: {risk['found']}")
+                print(f"      Mitigación: {risk['recommendation']}\n")
+
+            # Generación automática del informe técnico estructurado
+            sys_info = system.collect() if 'system' in globals() else {}
+            reporter = ReportGenerator(evaluated_risks, sys_info)
+            report_file = reporter.generate_json_report()
+            print(f"[+] Technical audit report successfully generated at: {report_file}")
         else:
             print("[+] ¡Impecable! La configuración de SSH cumple perfectamente con la línea base.")
 
     except FileNotFoundError as e:
         print(f"[-] Error con la línea base: {e}")
 
-    print("\n[+] Day 4 evaluation completed successfully!")
+    print("\n[+] Audit and risk evaluation completed successfully!")
 
 if __name__ == "__main__":
     try:
