@@ -1,1 +1,1 @@
-Aqui se ubicaran las pruebas unitarias y scripts de validacion automatizada del framework.
+Place unit testing scripts and automated validation modules here.

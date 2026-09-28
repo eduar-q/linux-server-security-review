@@ -1,1 +1,1 @@
-Aqui van las capturas de la terminal y del reporte json de auditoria.
+Place terminal execution screenshots and JSON audit report previews here.
