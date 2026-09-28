@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "audit_timestamp": "2026-09-28 00:00:00 UTC",
+        "target_system": "Linux-Lab",
+        "os_release": "Linux Mint 22.3",
+        "total_findings": 2
+    },
+    "findings": [
+        {
+            "parameter": "SSH -> PermitRootLogin",
+            "expected": "no",
+            "found": "yes",
+            "severity": "HIGH",
+            "recommendation": "Edit /etc/ssh/sshd_config and set 'PermitRootLogin no' to prevent direct administrative root access over the network."
+        },
+        {
+            "parameter": "SSH -> Port",
+            "expected": 22,
+            "found": 2222,
+            "severity": "LOW",
+            "recommendation": "Edit /etc/ssh/sshd_config and change the listening port to '22' (or a non-standard custom port) to mitigate automated scanning bots."
+        }
+    ]
+}
